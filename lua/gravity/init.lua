@@ -251,10 +251,23 @@ M.load = function(opts)
 	hi("WhichKeyFloat", { bg = colors.bg })
 
 	-- Indent Blankline
-	hi("IndentBlanklineChar", { fg = colors.gray3 })
-	hi("IndentBlanklineContextChar", { fg = colors.blue2 })
 
-	-- Store colors for lualine
+  -- Indent Blankline (add this section where the old one was)
+hi("IblIndent", { fg = colors.gray3 })
+hi("IblWhitespace", { fg = colors.gray3 })
+hi("IblScope", { fg = colors.blue2 })
+-- Add numbered variants that indent-blankline expects
+hi("IblIndent1", { fg = colors.gray3 })
+hi("IblIndent2", { fg = colors.gray3 })
+hi("IblIndent3", { fg = colors.gray3 })
+hi("IblIndent4", { fg = colors.gray3 })
+hi("IblIndent5", { fg = colors.gray3 })
+hi("IblIndent6", { fg = colors.gray3 })
+hi("IblIndent7", { fg = colors.gray3 })
+hi("IblIndent8", { fg = colors.gray3 })
+-- Old names for compatibility
+hi("IndentBlanklineChar", { fg = colors.gray3 })
+hi("IndentBlanklineContextChar", { fg = colors.blue2 })-- Store colors for lualine
 	M.colors = colors
 end
 
