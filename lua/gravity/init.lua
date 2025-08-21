@@ -140,7 +140,7 @@ M.load = function(opts)
 	hi("Statement", { fg = colors.blue4 })
 	hi("Special", { fg = colors.teal })
 	hi("Delimiter", { fg = colors.blue5 })
-	hi("Operator", { fg = colors.teal })
+	hi("Operator", { fg = colors.purple })
 
 	-- Links
 	hi("Character", { link = "Constant" })
@@ -210,7 +210,7 @@ M.load = function(opts)
 	hi("@text.uri", { fg = colors.blue4, gui = "underline" })
 	hi("Operator", { fg = colors.teal }) -- Base operators: + - * / %
 	-- TreeSitter specific operator highlights
-	hi("@operator", { fg = colors.teal }) -- All operators
+	hi("@operator", { fg = colors.purple }) -- All operators
 	hi("@keyword.operator", { fg = colors.blue4 }) -- and, or, not, in
 	hi("@punctuation.delimiter", { fg = colors.blue5 }) -- , ; .
 	hi("@punctuation.bracket", { fg = colors.fg }) -- () [] {}
