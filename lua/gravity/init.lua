@@ -140,7 +140,7 @@ M.load = function(opts)
 	hi("Statement", { fg = colors.blue4 })
 	hi("Special", { fg = colors.teal })
 	hi("Delimiter", { fg = colors.blue5 })
-	hi("Operator", { fg = colors.fg })
+	hi("Operator", { fg = colors.teal })
 
 	-- Links
 	hi("Character", { link = "Constant" })
@@ -172,6 +172,7 @@ M.load = function(opts)
 	hi("@module", { fg = colors.cyan })
 	hi("@label", { link = "Label" })
 	hi("@string", { link = "String" })
+
 	hi("@string.escape", { fg = colors.teal })
 	hi("@string.special", { fg = colors.teal })
 	hi("@character", { link = "Character" })
@@ -207,7 +208,19 @@ M.load = function(opts)
 	hi("@text.emphasis", { gui = "italic" })
 	hi("@text.strong", { gui = "bold" })
 	hi("@text.uri", { fg = colors.blue4, gui = "underline" })
-
+	hi("Operator", { fg = colors.teal }) -- Base operators: + - * / %
+	-- TreeSitter specific operator highlights
+	hi("@operator", { fg = colors.teal }) -- All operators
+	hi("@keyword.operator", { fg = colors.blue4 }) -- and, or, not, in
+	hi("@punctuation.delimiter", { fg = colors.blue5 }) -- , ; .
+	hi("@punctuation.bracket", { fg = colors.fg }) -- () [] {}
+	hi("@punctuation.special", { fg = colors.magenta }) -- Special punctuation
+	-- Language-specific operator highlights (for better granularity)
+	hi("@operator.assignment", { fg = colors.blue4 }) -- = += -= *= /= %=
+	hi("@operator.comparison", { fg = colors.purple }) -- == != < > <= >=
+	hi("@operator.arithmetic", { fg = colors.teal }) -- + - * / %
+	hi("@operator.bitwise", { fg = colors.orange }) -- & | ^ ~ << >>
+	hi("@operator.logical", { fg = colors.green }) -- && || !
 	-- LSP support
 	hi("DiagnosticError", { fg = colors.red })
 	hi("DiagnosticWarn", { fg = colors.orange })
@@ -252,22 +265,22 @@ M.load = function(opts)
 
 	-- Indent Blankline
 
-  -- Indent Blankline (add this section where the old one was)
-hi("IblIndent", { fg = colors.gray3 })
-hi("IblWhitespace", { fg = colors.gray3 })
-hi("IblScope", { fg = colors.blue2 })
--- Add numbered variants that indent-blankline expects
-hi("IblIndent1", { fg = colors.gray3 })
-hi("IblIndent2", { fg = colors.gray3 })
-hi("IblIndent3", { fg = colors.gray3 })
-hi("IblIndent4", { fg = colors.gray3 })
-hi("IblIndent5", { fg = colors.gray3 })
-hi("IblIndent6", { fg = colors.gray3 })
-hi("IblIndent7", { fg = colors.gray3 })
-hi("IblIndent8", { fg = colors.gray3 })
--- Old names for compatibility
-hi("IndentBlanklineChar", { fg = colors.gray3 })
-hi("IndentBlanklineContextChar", { fg = colors.blue2 })-- Store colors for lualine
+	-- Indent Blankline (add this section where the old one was)
+	hi("IblIndent", { fg = colors.gray3 })
+	hi("IblWhitespace", { fg = colors.gray3 })
+	hi("IblScope", { fg = colors.blue2 })
+	-- Add numbered variants that indent-blankline expects
+	hi("IblIndent1", { fg = colors.gray3 })
+	hi("IblIndent2", { fg = colors.gray3 })
+	hi("IblIndent3", { fg = colors.gray3 })
+	hi("IblIndent4", { fg = colors.gray3 })
+	hi("IblIndent5", { fg = colors.gray3 })
+	hi("IblIndent6", { fg = colors.gray3 })
+	hi("IblIndent7", { fg = colors.gray3 })
+	hi("IblIndent8", { fg = colors.gray3 })
+	-- Old names for compatibility
+	hi("IndentBlanklineChar", { fg = colors.gray3 })
+	hi("IndentBlanklineContextChar", { fg = colors.blue2 }) -- Store colors for lualine
 	M.colors = colors
 end
 
