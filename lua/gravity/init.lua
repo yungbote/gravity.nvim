@@ -28,7 +28,7 @@ M.load = function(opts)
 		black = "#1e1e1e",
 
 		-- Grays
-		gray1 = "#989898",
+		gray1 = "#707070",
 		gray2 = "#878787",
 		gray3 = "#e0e0e0",
 		gray4 = "#a8a8a8",
@@ -46,7 +46,7 @@ M.load = function(opts)
 		red = "#b84e4e",
 		darkred = "#7e3b3b",
 		crimson = "#9a3f3f",
-		brightred = "#c24d4d",
+		brightred = "#a13f3f",
 		verydarkred = "#6a2f2f",
 
 		-- Greens (slightly muted)
