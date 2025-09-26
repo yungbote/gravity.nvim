@@ -19,51 +19,55 @@ M.load = function(opts)
 	vim.g.colors_name = "gravity"
 	vim.o.background = "light"
 
-	-- Define colors
+	-- Define muted colors
 	local colors = {
-		-- Base colors from gravity
-		fg = "#404040",
-		bg = "#f0f0f0",
-		white = "#ffffff",
-		black = "#000000",
+		-- Base
+		fg = "#3a3a3a",
+		bg = "#f7f7f7",
+		white = "#fdfdfd",
+		black = "#202020",
 
 		-- Grays
-		gray1 = "#909090",
-		gray2 = "#808080",
-		gray3 = "#dcdcdc",
-		gray4 = "#9c9c9c",
-		gray5 = "#7c7c7c",
-		gray6 = "#8f8f8f",
+		gray1 = "#a0a0a0",
+		gray2 = "#8a8a8a",
+		gray3 = "#e2e2e2",
+		gray4 = "#b0b0b0",
+		gray5 = "#9a9a9a",
+		gray6 = "#7f7f7f",
 
-		-- Blues
-		blue1 = "#c0d0e0",
-		blue2 = "#4b5e81",
-		blue3 = "#2a3a57",
-		blue4 = "#001ac4",
-		blue5 = "#000557",
+		-- Blues (muted)
+		blue1 = "#d0d8e0",
+		blue2 = "#6b7a91",
+		blue3 = "#47566a",
+		blue4 = "#405070",
+		blue5 = "#2f3b4e",
 
-		-- Colors
-		red = "#c40020",
-		darkred = "#7d0000",
-		crimson = "#A00000",
-		brightred = "#CB1014",
-		verydarkred = "#a40004",
+		-- Reds (muted)
+		red = "#a85c5c",
+		darkred = "#744444",
+		crimson = "#884c4c",
+		brightred = "#b05c5c",
+		verydarkred = "#633838",
 
-		green = "#2a9400",
-		lightgreen = "#b4de85",
+		-- Greens (muted)
+		green = "#4f7a4f",
+		lightgreen = "#c2d7b2",
 
-		purple = "#7800c4",
-		magenta = "#d8008e",
+		-- Purple / magenta (muted)
+		purple = "#7a5c8c",
+		magenta = "#9a6c8a",
 
-		cyan = "#00A0A0",
-		lightcyan = "#87c5dc",
-		teal = "#007958",
+		-- Cyan / teal (muted)
+		cyan = "#5f8c8c",
+		lightcyan = "#b5d0d0",
+		teal = "#4f7a6a",
 
-		orange = "#ff8a00",
-		orangered = "#ff4500",
+		-- Orange (muted)
+		orange = "#d08c5c",
+		orangered = "#c07050",
 	}
 
-	-- Helper function
+	-- Helper
 	local function hi(group, opts)
 		local cmd = "hi " .. group
 		if opts.fg then
