@@ -49,16 +49,16 @@ M.load = function(opts)
 		brightred = "#a13f3f",
 		verydarkred = "#6a2f2f",
 
-		-- Greens (slightly muted)
-		green = "#4e8654",
+		-- Greens slot (remapped)
+		green = "#a0628f",
 		lightgreen = "#b9d6a8",
 
 		-- Purple / magenta (slightly muted)
 		purple = "#7e63a3",
-		magenta = "#a0628f",
+		magenta = "#3f5f95",
 		pink = "#b46a98",
 		string_pink = "#B37FD4",
-		include_keyword = "#3f5f95",
+		include_keyword = "#B37FD4",
 		include_path = "#8f70b0",
 
 		-- Cyan / teal (slightly muted)
@@ -314,7 +314,7 @@ M.get_lualine_theme = function()
 			blue1 = "#c0d0e0",
 			blue2 = "#4b5e81",
 			blue3 = "#2a3a57",
-			green = "#2a9400",
+			green = "#a0628f",
 			red = "#c40020",
 			purple = "#7800c4",
 			orange = "#ff8a00",
