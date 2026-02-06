@@ -56,6 +56,7 @@ M.load = function(opts)
 		-- Purple / magenta (slightly muted)
 		purple = "#7e63a3",
 		magenta = "#a0628f",
+		pink = "#b46a98",
 
 		-- Cyan / teal (slightly muted)
 		cyan = "#5699a0",
@@ -131,7 +132,7 @@ M.load = function(opts)
 
 	-- Syntax highlighting
 	hi("Comment", { fg = colors.gray1 })
-	hi("String", { fg = colors.red })
+	hi("String", { fg = colors.pink })
 	hi("Number", { fg = colors.red })
 	hi("Keyword", { fg = colors.green })
 	hi("PreProc", { fg = colors.green })
@@ -147,7 +148,7 @@ M.load = function(opts)
 	hi("Operator", { fg = colors.purple })
 
 	-- Links
-	hi("Character", { link = "Constant" })
+	hi("Character", { link = "String" })
 	hi("Boolean", { link = "Constant" })
 	hi("Float", { link = "Number" })
 	hi("Repeat", { link = "Statement" })
@@ -177,8 +178,8 @@ M.load = function(opts)
 	hi("@label", { link = "Label" })
 	hi("@string", { link = "String" })
 
-	hi("@string.escape", { fg = colors.teal })
-	hi("@string.special", { fg = colors.teal })
+	hi("@string.escape", { fg = colors.pink })
+	hi("@string.special", { fg = colors.pink })
 	hi("@character", { link = "Character" })
 	hi("@boolean", { link = "Boolean" })
 	hi("@number", { link = "Number" })
