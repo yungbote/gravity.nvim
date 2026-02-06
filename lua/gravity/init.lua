@@ -57,7 +57,7 @@ M.load = function(opts)
 		purple = "#7e63a3",
 		magenta = "#a0628f",
 		pink = "#b46a98",
-		string_pink = "#D16EF2",
+		string_pink = "#C98CFF",
 
 		-- Cyan / teal (slightly muted)
 		cyan = "#5699a0",
