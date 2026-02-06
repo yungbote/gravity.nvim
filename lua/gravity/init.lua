@@ -143,15 +143,15 @@ M.load = function(opts)
 	hi("Keyword", { fg = colors.green, gui = "bold" })
 	hi("PreProc", { fg = colors.green, gui = "bold" })
 	hi("Conditional", { fg = colors.blue4, gui = "bold" })
-	hi("Todo", { fg = colors.orangered, gui = "bold,italic" })
+	hi("Todo", { fg = colors.orangered, gui = "italic" })
 	hi("Constant", { fg = colors.red })
 	hi("Identifier", { fg = colors.purple })
-	hi("Function", { fg = colors.magenta, gui = "bold" })
-	hi("Type", { fg = colors.cyan, gui = "bold" })
+	hi("Function", { fg = colors.magenta })
+	hi("Type", { fg = colors.cyan })
 	hi("Statement", { fg = colors.blue4, gui = "bold" })
 	hi("Special", { fg = colors.teal })
 	hi("Delimiter", { fg = colors.blue5 })
-	hi("Operator", { fg = colors.purple })
+	hi("Operator", { fg = colors.purple, gui = "bold" })
 
 	-- Links
 	hi("Character", { link = "String" })
@@ -184,7 +184,7 @@ M.load = function(opts)
 	hi("@constant", { link = "Constant" })
 	hi("@constant.builtin", { link = "Constant" })
 	hi("@constant.macro", { link = "Constant" })
-	hi("@module", { fg = colors.cyan, gui = "bold" })
+	hi("@module", { fg = colors.cyan })
 	hi("@label", { link = "Label" })
 	hi("@string", { link = "String" })
 
@@ -199,7 +199,7 @@ M.load = function(opts)
 	hi("@function.call", { link = "Function" })
 	hi("@function.macro", { link = "Function" })
 	hi("@method", { link = "Function" })
-	hi("@constructor", { fg = colors.cyan, gui = "bold" })
+	hi("@constructor", { fg = colors.cyan })
 	hi("@parameter", { fg = colors.fg, gui = "italic" })
 	hi("@keyword", { link = "Keyword" })
 	hi("@keyword.function", { link = "Keyword" })
@@ -230,21 +230,21 @@ M.load = function(opts)
 	hi("@tag.delimiter", { fg = colors.blue5 })
 	hi("@text", { fg = colors.fg })
 	hi("@text.emphasis", { gui = "italic" })
-	hi("@text.strong", { gui = "bold" })
+	hi("@text.strong", { fg = colors.fg })
 	hi("@text.uri", { fg = colors.blue4, gui = "underline" })
-	hi("Operator", { fg = colors.teal }) -- Base operators: + - * / %
+	hi("Operator", { fg = colors.teal, gui = "bold" }) -- Base operators: + - * / %
 	-- TreeSitter specific operator highlights
-	hi("@operator", { fg = colors.purple }) -- All operators
-	hi("@keyword.operator", { fg = colors.blue4 }) -- and, or, not, in
+	hi("@operator", { fg = colors.purple, gui = "bold" }) -- All operators
+	hi("@keyword.operator", { fg = colors.blue4, gui = "bold" }) -- and, or, not, in
 	hi("@punctuation.delimiter", { fg = colors.blue5 }) -- , ; .
 	hi("@punctuation.bracket", { fg = colors.fg }) -- () [] {}
 	hi("@punctuation.special", { fg = colors.magenta }) -- Special punctuation
 	-- Language-specific operator highlights (for better granularity)
-	hi("@operator.assignment", { fg = colors.blue4 }) -- = += -= *= /= %=
-	hi("@operator.comparison", { fg = colors.purple }) -- == != < > <= >=
-	hi("@operator.arithmetic", { fg = colors.teal }) -- + - * / %
-	hi("@operator.bitwise", { fg = colors.orange }) -- & | ^ ~ << >>
-	hi("@operator.logical", { fg = colors.green }) -- && || !
+	hi("@operator.assignment", { fg = colors.blue4, gui = "bold" }) -- = += -= *= /= %=
+	hi("@operator.comparison", { fg = colors.purple, gui = "bold" }) -- == != < > <= >=
+	hi("@operator.arithmetic", { fg = colors.teal, gui = "bold" }) -- + - * / %
+	hi("@operator.bitwise", { fg = colors.orange, gui = "bold" }) -- & | ^ ~ << >>
+	hi("@operator.logical", { fg = colors.green, gui = "bold" }) -- && || !
 	-- LSP support
 	hi("DiagnosticError", { fg = colors.red })
 	hi("DiagnosticWarn", { fg = colors.orange })
