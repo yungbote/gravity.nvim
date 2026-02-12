@@ -23,7 +23,7 @@ M.load = function(opts)
 	local colors = {
 		-- Base colors
 		fg = "#3c3c3c",
-		bg = "#f5f5f5",
+		bg = "#000000",
 		white = "#ffffff",
 		black = "#1e1e1e",
 
