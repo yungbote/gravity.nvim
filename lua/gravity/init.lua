@@ -22,13 +22,13 @@ M.load = function(opts)
 	-- Define colors
 	local colors = {
 		-- Base colors
-		fg = "#3c3c3c",
+		fg = "#707070",
 		bg = "#000000",
 		white = "#ffffff",
 		black = "#1e1e1e",
 
 		-- Grays
-		gray1 = "#707070",
+		gray1 = "#3c3c3c",
 		gray2 = "#878787",
 		gray3 = "#e0e0e0",
 		gray4 = "#a8a8a8",
@@ -94,7 +94,7 @@ M.load = function(opts)
 	end
 
 	-- General colors
-	hi("Normal", { fg = colors.gray1, bg = colors.bg })
+	hi("Normal", { fg = colors.fg, bg = colors.bg })
 	hi("NonText", { fg = colors.bg, bg = colors.bg })
 	hi("Cursor", { fg = colors.white, bg = colors.black })
 	hi("LineNr", { fg = colors.fg, bg = colors.bg })
@@ -137,7 +137,7 @@ M.load = function(opts)
 	hi("DiffText", { fg = colors.white, bg = colors.verydarkred })
 
 	-- Syntax highlighting
-	hi("Comment", { fg = colors.fg, gui = "italic" })
+	hi("Comment", { fg = colors.gray1, gui = "italic" })
 	hi("String", { fg = colors.string_pink })
 	hi("Number", { fg = colors.red })
 	hi("Keyword", { fg = colors.green, gui = "bold" })
