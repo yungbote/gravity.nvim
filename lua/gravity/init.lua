@@ -94,7 +94,7 @@ M.load = function(opts)
 	end
 
 	-- General colors
-	hi("Normal", { fg = colors.fg, bg = colors.bg })
+	hi("Normal", { fg = colors.gray1, bg = colors.bg })
 	hi("NonText", { fg = colors.bg, bg = colors.bg })
 	hi("Cursor", { fg = colors.white, bg = colors.black })
 	hi("LineNr", { fg = colors.fg, bg = colors.bg })
@@ -137,7 +137,7 @@ M.load = function(opts)
 	hi("DiffText", { fg = colors.white, bg = colors.verydarkred })
 
 	-- Syntax highlighting
-	hi("Comment", { fg = colors.gray1, gui = "italic" })
+	hi("Comment", { fg = colors.fg, gui = "italic" })
 	hi("String", { fg = colors.string_pink })
 	hi("Number", { fg = colors.red })
 	hi("Keyword", { fg = colors.green, gui = "bold" })
