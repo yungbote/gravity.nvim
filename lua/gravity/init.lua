@@ -120,8 +120,8 @@ M.load = function(opts)
 	hi("Underlined", { fg = colors.blue4, gui = "underline" })
 
 	-- Cursor line
-	hi("CursorLine", { bg = colors.blue1 })
-	hi("CursorColumn", { bg = colors.blue1 })
+	hi("CursorLine", { bg = colors.bg })
+	hi("CursorColumn", { bg = colors.bg })
 
 	-- Match paren
 	hi("MatchParen", { fg = "red", bg = colors.bg, gui = "bold" })
