@@ -313,7 +313,7 @@ M.get_lualine_theme = function()
 	local colors = M.colors
 		or {
 			fg = "#404040",
-			bg = "#f0f0f0",
+			bg = "#000000",
 			blue1 = "#c0d0e0",
 			blue2 = "#4b5e81",
 			blue3 = "#2a3a57",
